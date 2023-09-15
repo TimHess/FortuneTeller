@@ -1,0 +1,14 @@
+---
+Logging:
+  IncludeScopes: true
+  Debug:
+    LogLevel:
+      Default: Information
+  Console:
+    LogLevel:
+      Default: Information
+Management:
+  endpoints:
+    actuator:
+      exposure:
+        include: ["*"]

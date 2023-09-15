@@ -1,0 +1,10 @@
+﻿applications:
+- name: FortuneTellerUI
+  buildpacks:
+   - dotnet_core_buildpack
+  env:
+    DOTNET_CLI_TELEMETRY_OPTOUT: "true"
+    DOTNET_NOLOGO: "true"
+  services:
+   - myDiscoveryService
+   - myConfigService

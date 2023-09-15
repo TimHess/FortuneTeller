@@ -1,0 +1,2 @@
+# Note: Ensure Docker is configured to share host drive/volume so the mount below will work correctly!
+docker run --rm -ti -p 8888:8888 -v .:/config --name FortuneConfigServer steeltoeoss/config-server --spring.profiles.active=native --spring.cloud.config.server.native.searchLocations=file:///config

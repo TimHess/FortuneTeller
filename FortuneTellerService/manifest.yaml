@@ -1,0 +1,10 @@
+﻿applications:
+- buildpack: dotnet_core_buildpack
+  env:
+    DOTNET_CLI_TELEMETRY_OPTOUT: true
+    DOTNET_NOLOGO: true
+  name: FortuneTellerService
+  services:
+  - myDiscoveryService
+  - myConfigService
+  - myPostgresService

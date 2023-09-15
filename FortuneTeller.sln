@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34112.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortuneTellerService", "FortuneTellerService\FortuneTellerService.csproj", "{98FD8811-4DD8-4C25-8A85-3EAFA60FE97E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{698CBD6D-A13B-4ABA-8D2A-BFBF7B311487}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortuneTellerUI", "FortuneTellerUI\FortuneTellerUI.csproj", "{00172765-86BA-4B69-9EF0-AD13BB0217B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortuneTellerCommon", "FortuneTellerCommon\FortuneTellerCommon.csproj", "{A63517EB-419E-4194-87D8-4E3AFC0A5235}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config-server-config", "config-server-config", "{D153B78D-A71E-4C77-B7B8-3092397B4B7E}"
+	ProjectSection(SolutionItems) = preProject
+		config-repo\application-development.yml = config-repo\application-development.yml
+		config-repo\application.yml = config-repo\application.yml
+		config-repo\fortuneTellerService.yml = config-repo\fortuneTellerService.yml
+		config-repo\FortuneTellerUI.yml = config-repo\FortuneTellerUI.yml
+		config-repo\start-config-server.ps1 = config-repo\start-config-server.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98FD8811-4DD8-4C25-8A85-3EAFA60FE97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FD8811-4DD8-4C25-8A85-3EAFA60FE97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FD8811-4DD8-4C25-8A85-3EAFA60FE97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FD8811-4DD8-4C25-8A85-3EAFA60FE97E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00172765-86BA-4B69-9EF0-AD13BB0217B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00172765-86BA-4B69-9EF0-AD13BB0217B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00172765-86BA-4B69-9EF0-AD13BB0217B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00172765-86BA-4B69-9EF0-AD13BB0217B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A63517EB-419E-4194-87D8-4E3AFC0A5235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63517EB-419E-4194-87D8-4E3AFC0A5235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63517EB-419E-4194-87D8-4E3AFC0A5235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63517EB-419E-4194-87D8-4E3AFC0A5235}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF92F0CC-62E2-4CF6-BAD7-AB007225C53D}
+	EndGlobalSection
+EndGlobal
