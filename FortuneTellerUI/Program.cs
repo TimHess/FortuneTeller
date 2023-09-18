@@ -4,6 +4,7 @@ using Steeltoe.Common.Http.LoadBalancer;
 using Steeltoe.Configuration.CloudFoundry;
 using Steeltoe.Configuration.CloudFoundry.ServiceBinding;
 using Steeltoe.Configuration.ConfigServer;
+using Steeltoe.Connectors.RabbitMQ;
 using Steeltoe.Discovery.Client;
 using Steeltoe.Discovery.Eureka;
 using Steeltoe.Management.Endpoint;
@@ -16,10 +17,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add Steeltoe components individually
 builder.Configuration
     .AddCloudFoundry()
-    .AddConfigServer(LoggerFactory.Create(builder => builder.SetMinimumLevel(LogLevel.Trace).AddConsole()))
-    .AddCloudFoundryServiceBindings();
+    .AddConfigServer(LoggerFactory.Create(loggingBuilder => loggingBuilder.SetMinimumLevel(LogLevel.Trace).AddConsole()));
 builder.AddServiceDiscovery(options => options.UseEureka());
 builder.AddAllActuators();
+builder.AddRabbitMQ();
 
 
 builder.Services.Configure<FortuneServiceOptions>(builder.Configuration.GetSection("fortuneService"));

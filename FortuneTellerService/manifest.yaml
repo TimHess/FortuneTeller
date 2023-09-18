@@ -8,3 +8,4 @@
   - myDiscoveryService
   - myConfigService
   - myPostgresService
+  - myRabbitMQService

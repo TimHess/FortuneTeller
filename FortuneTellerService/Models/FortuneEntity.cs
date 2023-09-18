@@ -8,4 +8,6 @@ public class FortuneEntity
     public int Id { get; set; }
 
     public required string Text { get; set; }
+
+    public string? MessageFromBeyond { get; set; }
 }

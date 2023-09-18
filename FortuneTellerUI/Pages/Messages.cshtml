@@ -1,0 +1,8 @@
+﻿@page
+@model FortuneTellerUI.Pages.MessagesModel
+@{
+    ViewData["Title"] = "Like email, but from ghosts*";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.MessageReceived</h3>
+<p>If you really must know, these messages were actually received through RabbitMQ: @Model.ConnectionString</p>

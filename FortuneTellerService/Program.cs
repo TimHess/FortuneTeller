@@ -5,6 +5,7 @@ using Steeltoe.Configuration.CloudFoundry.ServiceBinding;
 using Steeltoe.Configuration.ConfigServer;
 using Steeltoe.Connectors.EntityFrameworkCore.PostgreSql;
 using Steeltoe.Connectors.PostgreSql;
+using Steeltoe.Connectors.RabbitMQ;
 using Steeltoe.Discovery.Client;
 using Steeltoe.Discovery.Eureka;
 using Steeltoe.Management.Endpoint;
@@ -17,11 +18,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add Steeltoe components individually
 builder.Configuration
     .AddCloudFoundry()
-    .AddConfigServer(LoggerFactory.Create(builder => builder.SetMinimumLevel(LogLevel.Trace).AddConsole()))
-    .AddCloudFoundryServiceBindings();
+    .AddConfigServer(LoggerFactory.Create(builder => builder.SetMinimumLevel(LogLevel.Trace).AddConsole()));
 builder.AddServiceDiscovery(options => options.UseEureka());
 builder.AddAllActuators();
 builder.AddPostgreSql();
+builder.AddRabbitMQ();
 
 builder.Services.AddDbContext<FortuneContext>((serviceProvider, options) => options.UseNpgsql(serviceProvider));
 builder.Services.AddScoped<IFortuneRepository, FortuneRepository>();
