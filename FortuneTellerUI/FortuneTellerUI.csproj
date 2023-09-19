@@ -8,11 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
-    <PackageReference Include="Steeltoe.Bootstrap.AutoConfiguration" Version="4.0.184-alpha" />
-    <PackageReference Include="Steeltoe.Configuration.CloudFoundry" Version="4.0.184-alpha" />
-    <PackageReference Include="Steeltoe.Configuration.ConfigServer" Version="4.0.184-alpha" />
-    <PackageReference Include="Steeltoe.Discovery.Eureka" Version="4.0.184-alpha" />
-    <PackageReference Include="Steeltoe.Management.Endpoint" Version="4.0.184-alpha" />
+    <PackageReference Include="Steeltoe.Bootstrap.AutoConfiguration" Version="4.0.186-alpha" />
+    <PackageReference Include="Steeltoe.Configuration.CloudFoundry" Version="4.0.186-alpha" />
+    <PackageReference Include="Steeltoe.Configuration.ConfigServer" Version="4.0.186-alpha" />
+    <PackageReference Include="Steeltoe.Discovery.Eureka" Version="4.0.186-alpha" />
+    <PackageReference Include="Steeltoe.Management.Endpoint" Version="4.0.186-alpha" />
   </ItemGroup>
 
   <ItemGroup>
